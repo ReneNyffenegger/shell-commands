@@ -1,0 +1,1 @@
+ls -I '#*' -I '-*' -I '_*'  testfiles

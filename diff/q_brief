@@ -1,0 +1,2 @@
+diff -q testfiles/side-by-side-{a,b}
+# diff -q testfiles/dir-recursive/dir_{1,2}

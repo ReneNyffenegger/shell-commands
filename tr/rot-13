@@ -1,0 +1,3 @@
+cat testfiles/lorem-ipsum-dolor       | tr '[a-z][A-Z]' '[n-za-m][N-ZA-M]' > lorem-ipsum-dolor.rot13
+cat           lorem-ipsum-dolor.rot13 | tr '[a-z][A-Z]' '[n-za-m][N-ZA-M]'
+

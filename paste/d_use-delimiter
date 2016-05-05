@@ -1,0 +1,1 @@
+paste -d , testfiles/file-{1,2}

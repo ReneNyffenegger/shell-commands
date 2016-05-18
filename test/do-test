@@ -97,7 +97,7 @@ test_file() {
      echo "  File is not writeable"
   fi
 
-  if [ -w $1 ]; then
+  if [ -x $1 ]; then
      echo "  File is executable"
   else
      echo "  File is not executable"

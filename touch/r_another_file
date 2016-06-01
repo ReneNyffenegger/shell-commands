@@ -1,0 +1,6 @@
+# Touch file with another (--reference'd) file
+
+rm    -rf               r_another_file.touched
+touch -r r_another_file r_another_file.touched
+
+ls    -l r_another_file*

@@ -1,0 +1,23 @@
+rm   -rf dest
+rm   -rf src
+
+cp   -rp  src.orig src
+
+# if src/ is used without trailing slash, a directory src will be
+# created under dest/
+rsync -a --delete src/ dest/
+
+
+# Make file's content uppercase
+# http://www.howtogeek.com/135533/how-to-use-rsync-to-backup-your-data-on-linux/
+sed -i -e 's/\(.\)/\U\1/g' src/dir_A/file_A.1
+
+rsync -a --delete src/ dest/
+
+diff -r src dest
+
+rm src/dir_A/file_A.2
+
+rsync -a --delete src/ dest/
+
+diff -r src dest

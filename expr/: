@@ -1,0 +1,7 @@
+#   expr STRING : REGEXP
+#
+# ^ is automatically prepended to the regular expression
+
+expr "A foo a bar and a baz" : '.....'          # 5
+expr "A foo a bar and a baz" : '\(.....\)'      # A foo
+expr "A foo a bar and a baz" : '.*\(a \w\+\)'   # a baz

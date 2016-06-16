@@ -1,0 +1,3 @@
+expr index "foo bar baz" abc  # 5
+expr index "foo bar baz" def  # 1
+expr index "foo bar baz" ghi  # 0

@@ -1,0 +1,1 @@
+expr length "foo bar baz" # 11

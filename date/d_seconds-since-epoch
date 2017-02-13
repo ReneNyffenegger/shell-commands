@@ -1,0 +1,15 @@
+#!/bin/sh
+
+some_date='2001-02-03 04:05:06'
+
+# Convert date into seconds (Format is %s)
+seconds_since_epoch=$(date -d "$some_date" +%s)
+
+echo $some_date is $seconds_since_epoch seconds from 1970-01-01 away
+#
+# 2001-02-03 04:05:06 is 981169506 seconds from 1970-01-01 away
+
+# Convert seconds into date with using @
+echo $seconds_since_epoch seconds from 1970 is $(date -d @$seconds_since_epoch)
+#
+# 981169506 seconds from 1970 is Sam Feb 3 04:05:06 CET 2001

@@ -1,2 +1,3 @@
 date -d "+5 days"
 date -d "+7 weeks +2 days"
+date -d "last Wednesday 2 pm"

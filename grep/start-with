@@ -1,0 +1,5 @@
+# vi: ft=sh
+#
+#  ^: start with
+#
+grep '^t' testfiles/numbers_1-10

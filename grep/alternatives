@@ -1,0 +1,5 @@
+# vi: ft=sh
+#
+#  \|  search for alternatives (here: foo or home)
+#
+grep  'foo\|home' testfiles/foo-bar-baz

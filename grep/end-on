@@ -1,0 +1,5 @@
+# vi: ft=sh
+#
+#  $: end on
+#
+grep 'e$' testfiles/numbers_1-10

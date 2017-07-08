@@ -1,0 +1,11 @@
+#
+#  lines containing at least three numbers
+#
+
+
+grep '[0-9][0-9][0-9]' testfiles/items
+
+echo '
+  With -P:
+'
+grep -P '\d\d\d'       testfiles/items

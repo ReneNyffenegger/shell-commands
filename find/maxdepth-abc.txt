@@ -1,0 +1,7 @@
+#   vi: ft=sh
+#
+#   There are three abc.txt files (→ name-abc.txt)
+#
+#   We want to find those thate are not deeper than three levels
+
+find . -maxdepth 3 -type f -name abc.txt

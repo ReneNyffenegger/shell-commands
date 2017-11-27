@@ -1,0 +1,8 @@
+#  vi: ft=sh
+#
+#  There are three abc.txt files (→ name-abc.txt)
+#
+#  We don't want to find those that are under dir_two
+
+find . -name dir_two -type d -prune -o -name abc.txt -print
+

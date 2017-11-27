@@ -1,0 +1,6 @@
+#   vi: ft=sh
+#
+#   Find files (type f) whose name is abc.txt
+#
+
+find . -type f -name abc.txt

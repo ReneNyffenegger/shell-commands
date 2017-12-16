@@ -1,0 +1,13 @@
+# vim: ft=sh
+date_with_tz() {
+  printf "%-20s %s\n" $1 "$(TZ=$1 date)"
+}
+
+date_with_tz Europe/Lisboa
+date_with_tz Europe/Zurich
+date_with_tz America/Los_Angeles
+
+# Script prints:
+#   Europe/Lisboa        Sam Dez 16 12:41:47 Europe 2017
+#   Europe/Zurich        Sam Dez 16 13:41:47 CET 2017
+#   America/Los_Angeles  Sam Dez 16 04:41:47 PST 2017

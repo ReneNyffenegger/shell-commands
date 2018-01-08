@@ -1,0 +1,10 @@
+# vi: ft=sh
+
+# Print matching line and the following two lines:
+grep -A2 four testfiles/numbers_1-10
+
+# Print matching line and the previous two lines:
+grep -B2 four testfiles/numbers_1-10
+
+# Print matching line and the two previous and following lines
+grep -C2 four testfiles/numbers_1-10

@@ -1,0 +1,8 @@
+# vi: ft=sh
+#
+#    -o  : print only what has matched
+#    -P  : Use PCRE regular expressions
+#    \w+ : match alphanumerics
+#
+
+grep -oP '\w+' testfiles/xyz

@@ -1,0 +1,83 @@
+function setMod {
+
+  touch    b/f-$1
+  chmod $1 b/f-$1
+
+  mkdir    b/d-$1
+  chmod $1 b/d-$1
+}
+
+rm    -rf b
+mkdir     b
+
+setMod 0000
+setMod 0001
+setMod 0002
+setMod 0003
+setMod 0004
+setMod 0005
+setMod 0006
+setMod 0007
+
+setMod 1700
+setMod 2700
+setMod 3700
+setMod 4700
+setMod 5700
+setMod 6700
+setMod 7700
+
+setMod 1770
+setMod 2770
+setMod 3770
+setMod 4770
+setMod 5770
+setMod 6770
+setMod 7770
+
+ls -l b | awk '{print $1 " " $9}'
+
+# d---------. d-0000
+# d--------x. d-0001
+# d-------w-. d-0002
+# d-------wx. d-0003
+# d------r--. d-0004
+# d------r-x. d-0005
+# d------rw-. d-0006
+# d------rwx. d-0007
+# drwx-----T. d-1700
+# drwxrwx--T. d-1770
+# drwx--S---. d-2700
+# drwxrws---. d-2770
+# drwx--S--T. d-3700
+# drwxrws--T. d-3770
+# drws------. d-4700
+# drwsrwx---. d-4770
+# drws-----T. d-5700
+# drwsrwx--T. d-5770
+# drws--S---. d-6700
+# drwsrws---. d-6770
+# drws--S--T. d-7700
+# drwsrws--T. d-7770
+# ----------. f-0000
+# ---------x. f-0001
+# --------w-. f-0002
+# --------wx. f-0003
+# -------r--. f-0004
+# -------r-x. f-0005
+# -------rw-. f-0006
+# -------rwx. f-0007
+# -rwx------. f-1700
+# -rwxrwx---. f-1770
+# -rwx--S---. f-2700
+# -rwxrws---. f-2770
+# -rwx--S---. f-3700
+# -rwxrws---. f-3770
+# -rws------. f-4700
+# -rwsrwx---. f-4770
+# -rws------. f-5700
+# -rwsrwx---. f-5770
+# -rws--S---. f-6700
+# -rwsrws---. f-6770
+# -rws--S---. f-7700
+# -rwsrws---. f-7770

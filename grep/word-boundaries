@@ -1,0 +1,5 @@
+#
+# Find lines with word containing exactly three letters.
+#
+
+grep '\<...\>' testfiles/xyz

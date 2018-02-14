@@ -1,0 +1,11 @@
+mkdir some-directory
+
+touch some-directory/file.one
+touch some-directory/file.two
+
+chmod 666 some-directory
+
+ls -l some-directory
+
+chmod 777 some-directory
+rm    -rf some-directory

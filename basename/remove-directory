@@ -1,0 +1,6 @@
+basename  relative/path/to/a/file      # file
+basename  relative/path/to/a/file.txt  # file.txt
+basename  relative/path/to/a/          # a
+basename /absolute/path/to/a/file      # file
+basename /absolute/path/to/a/file.txt  # file.txt
+basename /absolute/path/to/a/          # a

@@ -1,6 +1,8 @@
 one two three
+The following line is reported with 'diff -Z'
 four five six
 seven eight nine
 ten.
+The following line is not reported with 'diff -Z':
 This line might have whitespaces before the newline.
 foo bar baz

@@ -1,0 +1,11 @@
+cat > to-be-sorted <<"EOF"
+one
+two
+three
+four
+five
+EOF
+
+sort to-be-sorted -o to-be-sorted
+
+cat to-be-sorted

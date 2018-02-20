@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cmd-bad 2>&1 | tee cmd-bad.log
+echo "\$PIPESTATUS = $PIPESTATUS / \$? = $?"

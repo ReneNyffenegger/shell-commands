@@ -1,0 +1,5 @@
+#!/bin/bash
+
+>&1 echo "cmd-bad is running"
+>&2 echo "cmd-bad is failing"
+exit 42

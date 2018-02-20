@@ -1,0 +1,1 @@
+sed -i 's/two/TWO/' file.txt

@@ -1,0 +1,5 @@
+echo "one: foo"    >  file.txt
+echo "two: bar"   >>  file.txt
+echo "three: baz" >>  file.txt
+
+md5sum file.txt > file.md5sum

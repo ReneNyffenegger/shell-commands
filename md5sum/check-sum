@@ -1,0 +1,1 @@
+md5sum -c file.md5sum

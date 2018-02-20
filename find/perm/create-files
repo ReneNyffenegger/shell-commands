@@ -1,0 +1,28 @@
+# vi: ft=sh
+
+[[ -d files ]] && mkdir files
+
+mkdir files
+
+#   Iterate over each possible mode
+for file_mode_octal in {0..7}{0..7}{0..7}{0..7}; do
+
+  # Create a file …
+    touch x
+  # … and change its mode
+    chmod $file_mode_octal x
+
+  # Use ls's long listing format to determine the
+  # humanly readable flags.
+    flags_human_readable=$(ls -l x | cut -d' ' -f 1)
+
+  # We have to remove the first character from flags_human_readable,
+  # because signifies if the object is a file, directory, socket etc.
+  # This # information is uninteresting for now:
+    flags_human_readable=${flags_human_readable:1}
+
+  # We move the file and name it with both the octal and the humanly
+  # readable representation of the file:
+    mv x files/${file_mode_octal}___${flags_human_readable}
+
+done

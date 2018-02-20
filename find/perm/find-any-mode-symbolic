@@ -1,0 +1,2 @@
+find files -perm /u=x,g=r,a=r
+

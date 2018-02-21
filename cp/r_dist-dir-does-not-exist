@@ -1,0 +1,21 @@
+mkdir source-dir
+mkdir source-dir/sub-dir-1
+mkdir source-dir/sub-dir-2
+touch source-dir/file-a
+touch source-dir/sub-dir-1/file-b
+touch source-dir/sub-dir-2/file-c
+
+#
+#  dest-dir does not exist, it will be created.
+#
+cp -r source-dir dest-dir
+
+#
+#  The contents of dest-dir and source-dir
+#  is identical
+#
+tree source-dir
+tree dest-dir
+
+rm -rf source-dir
+rm -rf dest-dir

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+stty_size=$(stty size)    # Returns two numbers: rows and columns
+
+nofCols=${stty_size##* }  # delete up to last space from the left
+nofRows=${stty_size%% *}  # delete from first space to the right
+
+echo "Number of columns: $nofCols"
+echo "Number of rows:    $nofRows"

@@ -1,0 +1,7 @@
+# Showing my processes.
+# 
+# id -u returns my user id
+# 
+# U selects processes with the given user id.
+
+ps -o pid,ppid,cmd  U$(id -u)

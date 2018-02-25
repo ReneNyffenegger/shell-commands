@@ -1,0 +1,4 @@
+echo "Name    : $(id -u -n)"
+echo "User id : $(id -u   )"
+echo "Group   : $(id -g -n)"
+echo "Group id: $(id -g   )"

@@ -1,0 +1,1 @@
+dd if=516.bytes of=out.file bs=256

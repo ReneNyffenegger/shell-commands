@@ -34,7 +34,7 @@ tar --delete -f my.tar numbers.txt
 echo ''
 tar tvf my.tar
 
-# -C use different directory
+# -C to extract to different directory
 rm *.txt
 tar xf my.tar -C /tmp letters.txt
 cat /tmp/letters.txt

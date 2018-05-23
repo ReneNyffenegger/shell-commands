@@ -4,5 +4,8 @@
 #
 #  We don't want to find those that are under dir_two
 
-find . -name dir_two -type d -prune -o -name abc.txt -print
+find .                            \
+  -name dir_two -type d -prune -o \
+  -name abc.txt                   \
+  -print
 

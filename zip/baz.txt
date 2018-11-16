@@ -1,0 +1,4 @@
+Tokyo, Mumbai, Delhi, Dhaka,
+Mexico City, São Paolo, Lagos,
+Jakarta, New York, Karachi,
+Calcutta.

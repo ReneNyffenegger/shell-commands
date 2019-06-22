@@ -1,0 +1,5 @@
+touch -m -t 201011121314.15 touched
+touch -a -t 201211100908.07 touched
+
+stat --format="Last access time:       %x"  touched
+stat --format="Last modification time: %y"  touched

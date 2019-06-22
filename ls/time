@@ -1,0 +1,11 @@
+touch                    a-file
+touch -a -t 201508282223 a-file
+touch -m -t 200101010101 a-file
+
+ls -l  a-file
+#
+#  -rw------- 1 rene rene 0 Jan  1  2001 a-file
+
+ls -lu a-file
+#
+#  -rw------- 1 rene rene 0 Aug 28  2015 a-file

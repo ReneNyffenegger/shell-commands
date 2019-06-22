@@ -9,3 +9,7 @@ ls -l  a-file
 ls -lu a-file
 #
 #  -rw------- 1 rene rene 0 Aug 28  2015 a-file
+
+ls -lc a-file
+#
+#  -rw------- 1 rene rene 0 Jun 22 13:55 a-file

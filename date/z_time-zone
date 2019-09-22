@@ -1,0 +1,5 @@
+echo $(date '+%z'   ) # +0200
+echo $(date '+%:z'  ) # +02:00
+echo $(date '+%::z' ) # +02:00:00
+echo $(date '+%:::z') # +02         (Print required precision only)
+echo $(date '+%Z'   ) # CEST        (Alphabetic timezone abbreviation)

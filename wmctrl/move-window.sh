@@ -8,7 +8,7 @@ height=200
 
 for i in {1..100}; do
 
-# Adjust coorindates:
+# Adjust coordinates:
   x=$((      $x      + 5 ))
   y=$((      $y      - 4 ))
   width=$((  $width  - 3 ))
